@@ -9,11 +9,12 @@ body {
     color: #fff;
 }
 
-.login-container {
+.login-box {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
 }
 
 /* .login-box {

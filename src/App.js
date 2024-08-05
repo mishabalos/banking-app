@@ -1,13 +1,24 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
-import Login from './components/Login'; 
+import Login from './pages/login-page/Login'; 
+import Home from './pages/home-page/Home';
+import Transaction from './pages/transaction-page/Transaction';
+import UserCreation from './pages/user-creation-page/UserCreation';
 import './App.css';
+
 
 
 function App() {
   return (
-    <div className="App">
-     <Login /> 
-    </div>
+    <BrowserRouter>
+    <Routes>
+        <Route path="/" element={<Login />} /> {}
+        <Route path="/home" element={<Home />} /> {}
+        <Route path="/transaction" element={<Transaction />} /> {}
+        <Route path="/userCreation" element={<UserCreation />} /> {}
+        {}
+      </Routes>
+    </BrowserRouter>
   );
 }
 
