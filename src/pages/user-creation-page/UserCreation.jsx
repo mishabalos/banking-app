@@ -1,10 +1,18 @@
 import React from 'react';
+import SideNav from '../../components/SideNav/SideNav';
+import './UserCreation.css'
 
 const UserCreation = () => {
   return (
-    <div>
-      <h1>UserCreation works</h1>
+    <div className="userCreation-container">
+    <div className="sidenav-container">
+      <SideNav />
     </div>
+
+    <div className="page-content">
+      User Works
+    </div>
+  </div>
   );
 };
 

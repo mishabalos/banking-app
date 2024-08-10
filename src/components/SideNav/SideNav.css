@@ -1,23 +1,62 @@
 
 .sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: white;
-    padding-top: 20px;
+  height: 100%;
+  width: 252px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #232323;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidenav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
   }
-  
-  .sidenav a {
-    padding: 8px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
+
+  li {
+    display: flex;
+  align-items: center;
+  height: 2.5rem;
+  text-align: left;
+  padding: 0 2rem;
   }
-  
-  .sidenav a:hover {
-    background-color: #575757;
+
+  li:hover {
+    display: flex;
+  align-items: center;
+  height: 2.5rem;
+  text-align: left;
+  padding: 0 2rem;
+  background-color: #575757;
   }
-  
+}
+
+.sidenav-logo {
+width: 100%;
+}
+
+.sidenav-account {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.sidenav a {
+  padding: 8px 0;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  width:100%;
+}

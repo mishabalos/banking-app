@@ -1,0 +1,15 @@
+/* Transaction.css */
+
+.userCreation-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidenav-container {
+    width: 252px;
+  }
+  
+  .page-content {
+    width: calc(100% - 252px); 
+    padding: 20px; 
+  }
