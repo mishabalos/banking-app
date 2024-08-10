@@ -1,12 +1,14 @@
 [
     {
-        "id": 0, 
+        "accountNumber": "123456789", 
         "name": "Julius Troy Aguas",
-        "balance": "10000"
+        "email": "aguas.troy42@gmail.com", 
+        "totalBalance": "10000"
     },
     {
-        "id": 1, 
+        "accountNumber": "987654321", 
         "name": "Mishaela Abalos",
-        "balance": "5000"
+        "email": "abalos.mishaela@gmail.com", 
+        "totalBalance": "5000"
     }
 ]
