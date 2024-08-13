@@ -22,8 +22,8 @@ const Login = () => {
             <h2 className="loginGreeting">Welcome Back!</h2>
             <h3 className="loginAction">Let's Sign You In.</h3>
             <form onSubmit={handleSubmit}>
-                <input type="email" placeholder="Email Address" required />
-                <input type="password" placeholder="Password" required /> 
+                <input className='emailForm' type="email" placeholder="Email Address" required />
+                <input className='passwordForm' type="password" placeholder="Password" required /> 
                 <a href="/forget" className="forgot-password">Forgot Password?</a>
                 
                 <button type="submit">Sign In</button>

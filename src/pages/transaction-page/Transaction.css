@@ -1,4 +1,96 @@
-/* Transaction.css */
+.transaction-header {
+  display: flex;
+  justify-content: flex-start;
+
+  h1 {
+    margin: 0 !important;
+  }
+}
+
+.transaction-buttons {
+  .MuiToggleButton-root {
+    color: white;
+    background-color: #151618;
+    font-family: "poppins";
+    border-radius: 10px;
+    padding: 10px 44px;
+  }
+
+  .MuiToggleButton-root.Mui-selected {
+    background-color: #393e45;
+    color: white;
+    font-family: "poppins";
+    border-radius: 10px;
+    padding: 10px 44px;
+  }
+}
+
+.transaction-form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+    align-items: center;
+}
+
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.account, .transaction-balance, .transfer-account{
+  background-color: #151618 !important;
+  height: 40px;
+  color: white;
+  border: solid 0.5px #555;
+  border-radius: 10px;
+  padding: 0 16px;
+}
+
+.transaction-form {
+  width: 480px;
+  background-color: #232323;
+  border-radius: 10px;
+}
+
+.transaction {
+  padding:32px;
+  gap: 16px;
+
+  h4 {
+    text-align: left;
+    margin:0;
+    color: #F3BA2F;
+  }
+}
+
+.balance-label, .account-label, .deposit-label,.transfer_account-label{
+  text-align: left;
+}
+
+.account-form, .balance-form, .deposit-form, .transfer-account-form{
+  display: flex;
+    flex-direction: column;
+}
+
+.deposit-input {
+  background-color: #151618 !important;
+  height: 100px;
+  color: white;
+  border: solid 0.5px #555;
+  border-radius: 10px;
+  padding: 16px;
+  font-size: 48px;
+}
+
+.deposit-input::placeholder {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+/*Page css*/
 
 .transaction-container {
   display: flex;
@@ -9,7 +101,15 @@
   width: 252px;
 }
 
-.page-content {
-  width: calc(100% - 252px); 
-  padding: 20px; 
+.transaction-page-content {
+  width: calc(100% - 252px);
+  padding: 32px;
+  flex-direction: column;
+   gap: 32px;
+    display: flex;
+}
+
+
+.hidden {
+  display: none;
 }
