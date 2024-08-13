@@ -5,8 +5,20 @@ import Home from './pages/home-page/Home';
 import Transaction from './pages/transaction-page/Transaction';
 import UserCreation from './pages/user-creation-page/UserCreation';
 import './App.css';
+import accountData from '../src/assets/data/bankUserAccounts.json'
 
 function App() {
+  // check natin yung localStorage kung meron nang laman na array "users"
+  const localUsers = localStorage.getItem('users');
+
+  // kapag wala pa, i-seed natin yung "users" sa localStorage 
+  // gamit yung laman ng .json file natin
+  if(!localUsers) {
+    localStorage.setItem('users', JSON.stringify(accountData));
+  }
+  // once meron nang laman yung "users" sa localStorage
+  // pwede na siya i-interact from any component
+
   return (
     <BrowserRouter>
       <div className="App">

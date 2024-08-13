@@ -1,9 +1,12 @@
 import React from 'react';
-import bankUsers from '../../assets/data/bankUserAccounts.json';
 import SideNav from '../../components/SideNav/SideNav';
 import './Home.css';
 
+
 const Home = () => {
+  // eto yung pang retrieve mo ng data from localStorage
+  const accounts = JSON.parse(localStorage.getItem('users'));
+
   return (
     <div className="home-container">
       <div className="sidenav-container">
@@ -11,7 +14,7 @@ const Home = () => {
       </div>
       <div className="page-content">
         <h1 className="homeHeader">Accounts</h1>
-        {bankUsers.map((account, index) => (
+        {accounts.map((account, index) => (
           <div className="bankUsers-box" key={index}>
             <h2 className="accountName">{account.accountName}</h2>
             <div className="accountDetails">

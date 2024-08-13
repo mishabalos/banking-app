@@ -10,5 +10,17 @@
         "accountName": "ABALOS, MISHAELA C.",
         "email": "abalos.mishaela@gmail.com", 
         "totalBalance": "500,000.00"
+    },
+    {
+        "accountNumber": "9876543211", 
+        "accountName": "YULO, CARLOS EDRIEL",
+        "email": "gold.medal.ph@gmail.com", 
+        "totalBalance": "20,000,000.00"
+    },
+    {
+        "accountNumber": "9876543212", 
+        "accountName": "DIAZ, HIDILYN",
+        "email": "first.gold.medal.ph@gmail.com", 
+        "totalBalance": "10,000,000.00"
     }
 ]
