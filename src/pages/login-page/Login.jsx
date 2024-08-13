@@ -19,8 +19,8 @@ const Login = () => {
     <div className="login-container">
         <div className="login-box">
             <img src={logo} alt="Avion Bank Logo" className="logo" />
-            <h2>Welcome Back!</h2>
-            <h3>Let's Sign You In.</h3>
+            <h2 className="loginGreeting">Welcome Back!</h2>
+            <h3 className="loginAction">Let's Sign You In.</h3>
             <form onSubmit={handleSubmit}>
                 <input type="email" placeholder="Email Address" required />
                 <input type="password" placeholder="Password" required /> 

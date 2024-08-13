@@ -7,26 +7,71 @@ body {
     color: #fff;
 }
 
-h1 {
-    font-family: "Poppins", sans-serif;
+.homeHeader {
     font-weight: 700;
     font-style: normal;
     color: #F3BA2F;
-    text-align: center;
+    text-align: left;
 }
 
 .bankUsers-box  {
     background-color: #1e1e1e;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    /* padding: 32px; */
 } 
 
-h2, p {
+.accountName, .accountDetails {
     color: #FFFFFF; 
+    text-align: left; 
+    font-weight: 600;
+    font-style: normal;
+    padding-left: 32px;
 }
 
-/* Transaction.css */
+.accountName {
+    font-size: 20px;
+    padding-top: 32px;
+}
+
+.accountDetails {
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+
+.accounth3 {
+    margin: 0px;
+    font-size: 15px;
+}
+
+.accountTotalBalance {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    font-weight: 400;
+    font-style: normal;
+    padding-right: 32px;
+    margin-top: 0px;
+    height: 70px;
+}
+
+.accountTotalHeader{
+    font-size: 15px;
+}
+
+.accountDisplayBalance {
+    font-size: 20px;
+    color: #F3BA2F;
+    padding-left: 10px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+/* page css */
 
 .home-container {
     display: flex;

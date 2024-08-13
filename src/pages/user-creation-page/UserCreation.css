@@ -1,5 +1,91 @@
-/* Transaction.css */
+.create-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 55px;
+}
 
+.createrHeader {
+  font-weight: 700;
+  font-style: normal;
+  color: #F3BA2F;
+  text-align: left;
+}
+
+.createTitle {
+  padding-left: 40px;
+}
+
+.create-box  {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 800px; 
+} 
+
+.createForm {
+  padding-left: 40px;
+  width: 100%;
+}
+
+.createLabels {
+  text-align: left;
+  margin-bottom: 8px;
+  color: #ffffff; 
+}
+
+.createInput {
+  border-radius: 10px;
+  width: 680px;
+  height: 30px; 
+  margin-right: 60px;
+  margin-bottom: 20px;
+  padding: 10px; 
+  background-color: #333333; 
+  color: #ffffff;
+  border: none;
+}
+
+.createInput[readonly] {
+  background-color: #3a3a3a; 
+}
+
+.createButton {
+  border-radius: 10px;
+  margin-top: 20px; 
+  width: 680px; 
+  height: 50px;
+  background-color: #F3BA2F; 
+  color: #252525; 
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.createButton:hover {
+  background-color: #ffb300;
+}
+
+.userCreation-container {
+    display: flex;
+    height: 100vh;
+}
+  
+.sidenav-container {
+    width: 252px;
+}
+  
+.page-content {
+    width: calc(100% - 252px); 
+    padding: 20px; 
+}
+
+/*  */
 .userCreation-container {
     display: flex;
     height: 100vh;

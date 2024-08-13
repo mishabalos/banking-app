@@ -13,7 +13,7 @@ const SideNav = () => {
       <ul>
         <li><a href="/home">Accounts</a></li>
         <li><a href="/transaction">Transactions</a></li>
-        <li><a href="/usercreation">User Creation</a></li>
+        <li><a href="/usercreation">Create Account</a></li>
       </ul>   
       </div>
       <div className='sidenav-account'>
