@@ -4,6 +4,7 @@ import Login from './pages/login-page/Login';
 import Home from './pages/home-page/Home';
 import Transaction from './pages/transaction-page/Transaction';
 import UserCreation from './pages/user-creation-page/UserCreation';
+import Budget from './pages/budget-app/Budget';
 import './App.css';
 import accountData from '../src/assets/data/bankUserAccounts.json'
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/transaction" element={<Transaction />} />
             <Route path="/userCreation" element={<UserCreation />} />
+            <Route path="/budget" element={<Budget />} />
           </Routes>
         </div>
       </div>
