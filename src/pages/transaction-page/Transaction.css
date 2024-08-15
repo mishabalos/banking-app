@@ -1,6 +1,6 @@
 .transaction-header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   h1 {
     margin: 0 !important;
@@ -40,7 +40,7 @@
   align-items: start;
 }
 
-.account, .transaction-balance, .transfer-account{
+.account, .transaction-balance, .transfer-account, .account-select{
   background-color: #151618 !important;
   height: 40px;
   color: white;
@@ -66,16 +66,16 @@
   }
 }
 
-.balance-label, .account-label, .deposit-label,.transfer_account-label{
+.balance-label, .account-label, .deposit-label,.transfer_account-label, .withdraw-label{
   text-align: left;
 }
 
-.account-form, .balance-form, .deposit-form, .transfer-account-form{
+.account-form, .balance-form, .deposit-form, .withdraw-form, .transfer-account-form{
   display: flex;
     flex-direction: column;
 }
 
-.deposit-input {
+.deposit-input, .withdraw-input {
   background-color: #151618 !important;
   height: 100px;
   color: white;
@@ -88,6 +88,20 @@
 .deposit-input::placeholder {
   font-size: 48px;
   font-weight: 600;
+}
+
+.deposit-modal {
+  position: absolute;
+  top: 50vh;
+  left: 45.8vw;
+  background-color: #121212;
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 10px;
 }
 
 /*Page css*/
@@ -113,3 +127,4 @@
 .hidden {
   display: none;
 }
+

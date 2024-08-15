@@ -1,4 +1,3 @@
-
 .sidenav {
   height: 100%;
   width: 252px;
@@ -26,24 +25,24 @@
 
   li {
     display: flex;
-  align-items: center;
-  height: 2.5rem;
-  text-align: left;
-  padding: 0 2rem;
+    align-items: center;
+    height: 2.5rem;
+    text-align: left;
+    padding: 0 2rem;
   }
 
   li:hover {
     display: flex;
-  align-items: center;
-  height: 2.5rem;
-  text-align: left;
-  padding: 0 2rem;
-  background-color: #575757;
+    align-items: center;
+    height: 2.5rem;
+    text-align: left;
+    padding: 0 2rem;
+    background-color: #575757;
   }
 }
 
 .sidenav-logo {
-width: 100%;
+  width: 100%;
 }
 
 .sidenav-account {
@@ -58,5 +57,16 @@ width: 100%;
   font-size: 16px;
   color: white;
   font-weight: 600;
-  width:100%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  /* Your styles go here */
+  .sidenav, .sidenav-container {
+    display: none;
+  }
+
+  .transaction-page-content {
+    width: 100% !important;
+  }
 }
