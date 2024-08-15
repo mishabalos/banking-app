@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import SideNav from '../../components/SideNav/SideNav';
 import './UserCreation.css'; // Importing the CSS file
 
@@ -46,33 +46,49 @@ const UserCreation = () => {
 
       <div className="create-content">
         <h1 className="createrHeader">Create Account</h1>
-        
-        <div className="create-box">
-          <p className="createTitle">Create a new client account.</p>
-          <form className="createForm" onSubmit={handleSubmit}>
-            <label className="createLabels">FULL NAME</label>
-            <input className="createInput" type="text" name="accountName" value={formData.accountName} onChange={handleChange} required></input>
 
-            <label className="createLabels">ACCOUNT # (RANDOMLY GENERATED)</label>
-            <input className="createInput" 
-              type="text"
-              value={formData.accountNumber}
-              readOnly></input>
+        <div className='user-create-content'>
+          <div className="create-box">
+            <p className="createTitle">Create a new client account.</p>
+            <form className="createForm" onSubmit={handleSubmit}>
 
-            <label className="createLabels">INITIAL BALANCE</label>
-            <input className="createInput" type="text" name="totalBalance" value={formData.totalBalance} onChange={handleChange}  placeholder="0.00"></input>
+              <div className='create-form-field'>
+                <label className="createLabels">FULL NAME</label>
+                <input className="createInput" type="text" name="accountName" value={formData.accountName} onChange={handleChange} required></input>
+              </div>
 
-            <label className="createLabels">EMAIL ADDRESS</label>
-            <input className="createInput" type="email" name="email" value={formData.email} onChange={handleChange}  required></input>
+              <div className='create-form-field'>
+                <label className="createLabels">ACCOUNT # (RANDOMLY GENERATED)</label>
+                <input className="createInput"
+                  type="text"
+                  value={formData.accountNumber}
+                  readOnly></input>
+              </div>
 
-            <label className="createLabels">PASSWORD</label>
-            <input className="createInput" type="password" name="password" value={formData.password} onChange={handleChange} required></input>
+              <div className='create-form-field'>
+                <label className="createLabels">INITIAL BALANCE</label>
+                <input className="createInput" type="text" name="totalBalance" value={formData.totalBalance} onChange={handleChange} placeholder="0.00"></input>
+              </div>
 
-            <button className="createButton">CREATE ACCOUNT</button>
-          </form>
-        </div>
-      </div>
-    </div>
+              <div className='create-form-field'>
+                <label className="createLabels">EMAIL ADDRESS</label>
+                <input className="createInput" type="email" name="email" value={formData.email} onChange={handleChange} required></input>
+              </div>
+
+              <div className='create-form-field'>
+                <label className="createLabels">PASSWORD</label>
+                <input className="createInput" type="password" name="password" value={formData.password} onChange={handleChange} required></input>
+              </div>
+
+              <div className='create-form-field'>
+              <button className="createButton">CREATE ACCOUNT</button>
+              </div>
+              
+            </form>
+          </div>
+        </div >
+      </div >
+    </div >
   );
 };
 

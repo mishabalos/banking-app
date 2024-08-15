@@ -12,26 +12,42 @@ body {
     font-style: normal;
     color: #F3BA2F;
     text-align: left;
+    margin: 0;
+    margin-bottom: 32px;
 }
 
 .bankUsers-box  {
     background-color: #1e1e1e;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* padding: 32px; */
+    padding: 32px 32px 0 32px;
+    margin-bottom:32px;
 } 
+
+.accountName {
+    margin:0 !important;
+}
+
+.deleteAccountButton {
+    color: #F3BA2F;
+    cursor: pointer;
+}
 
 .accountName, .accountDetails {
     color: #FFFFFF; 
     text-align: left; 
     font-weight: 600;
     font-style: normal;
-    padding-left: 32px;
+}
+
+.account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .accountName {
     font-size: 20px;
-    padding-top: 32px;
 }
 
 .accountDetails {
@@ -84,5 +100,5 @@ body {
   
   .page-content {
     width: calc(100% - 252px); 
-    padding: 20px; 
+    padding: 32px; 
   }

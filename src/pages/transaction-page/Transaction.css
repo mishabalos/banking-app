@@ -4,6 +4,7 @@
 
   h1 {
     margin: 0 !important;
+    color: #F3BA2F;
   }
 }
 
@@ -40,7 +41,7 @@
   align-items: start;
 }
 
-.account, .transaction-balance, .transfer-account, .account-select{
+.account, .transaction-balance, .transfer-account-select, .account-select {
   background-color: #151618 !important;
   height: 40px;
   color: white;
@@ -66,16 +67,16 @@
   }
 }
 
-.balance-label, .account-label, .deposit-label,.transfer_account-label, .withdraw-label{
+.balance-label, .account-label, .deposit-label,.transfer_account-label, .withdraw-label, .transfer-label {
   text-align: left;
 }
 
-.account-form, .balance-form, .deposit-form, .withdraw-form, .transfer-account-form{
+.account-form, .balance-form, .deposit-form, .withdraw-form, .transfer-form, .transfer-account-form{
   display: flex;
     flex-direction: column;
 }
 
-.deposit-input, .withdraw-input {
+.deposit-input, .withdraw-input, .transfer-input {
   background-color: #151618 !important;
   height: 100px;
   color: white;

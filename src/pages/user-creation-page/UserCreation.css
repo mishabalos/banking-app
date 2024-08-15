@@ -1,8 +1,14 @@
 .create-content {
+  width: calc(100% - 252px);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding-left: 55px;
+  padding: 32px;
+  gap: 32px;
+}
+
+.user-create-content{
+  display: flex;
+  justify-content: center;
 }
 
 .createrHeader {
@@ -10,10 +16,24 @@
   font-style: normal;
   color: #F3BA2F;
   text-align: left;
+  margin: 0;
+}
+
+.createButton {
+  margin-top: 32px;
 }
 
 .createTitle {
-  padding-left: 40px;
+
+}
+
+.createForm {
+  gap: 15px;
+}
+
+.create-form-field {
+  display: flex;
+  flex-direction: column;
 }
 
 .create-box  {
@@ -24,13 +44,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 800px; 
 } 
-
-.createForm {
-  padding-left: 40px;
-  width: 100%;
-}
 
 .createLabels {
   text-align: left;
@@ -42,8 +56,6 @@
   border-radius: 10px;
   width: 680px;
   height: 30px; 
-  margin-right: 60px;
-  margin-bottom: 20px;
   padding: 10px; 
   background-color: #333333; 
   color: #ffffff;
@@ -54,18 +66,6 @@
   background-color: #3a3a3a; 
 }
 
-.createButton {
-  border-radius: 10px;
-  margin-top: 20px; 
-  width: 680px; 
-  height: 50px;
-  background-color: #F3BA2F; 
-  color: #252525; 
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 16px;
-}
 
 .createButton:hover {
   background-color: #ffb300;
@@ -82,7 +82,7 @@
   
 .page-content {
     width: calc(100% - 252px); 
-    padding: 20px; 
+    padding: 32px; 
 }
 
 /*  */
@@ -97,5 +97,5 @@
   
   .page-content {
     width: calc(100% - 252px); 
-    padding: 20px; 
+    padding: 32px; 
   }
