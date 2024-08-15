@@ -1,26 +1,37 @@
 [
     {
         "accountNumber": "1234567890", 
-        "accountName": "AGUAS, JULIUS TROY C.",
-        "email": "aguas.troy42@gmail.com", 
-        "totalBalance": "1,000,000.00"
+        "accountName": "ADMIN ADMIN", 
+        "email": "admin123@gmail.com",
+        "password": "admin123", 
+        "totalBalance": "100,000.00"
     },
     {
         "accountNumber": "9876543210", 
-        "accountName": "ABALOS, MISHAELA C.",
-        "email": "abalos.mishaela@gmail.com", 
-        "totalBalance": "500,000.00"
+        "accountName": "JULIUS TROY AGUAS",
+        "email": "aguas.troy42@gmail.com",
+        "password": "troy123", 
+        "totalBalance": "1,000,000.00"
     },
     {
         "accountNumber": "9876543211", 
-        "accountName": "YULO, CARLOS EDRIEL",
-        "email": "gold.medal.ph@gmail.com", 
-        "totalBalance": "20,000,000.00"
+        "accountName": "MISHAELA ABALOS",
+        "email": "abalos.mishaela@gmail.com",
+        "password": "misha123",  
+        "totalBalance": "500,000.00"
     },
     {
         "accountNumber": "9876543212", 
-        "accountName": "DIAZ, HIDILYN",
-        "email": "first.gold.medal.ph@gmail.com", 
+        "accountName": "CARLOS EDRIEL YULO",
+        "email": "carlos.yulo@gmail.com", 
+        "password": "yulo123", 
+        "totalBalance": "20,000,000.00"
+    },
+    {
+        "accountNumber": "9876543213", 
+        "accountName": "HIDILYN DIAZ",
+        "email": "hidilyn.diaz@gmail.com", 
+        "password": "hidilyn123", 
         "totalBalance": "10,000,000.00"
     }
 ]
