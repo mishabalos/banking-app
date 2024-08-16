@@ -1,49 +1,78 @@
-import React from "react";
+import React, { useState } from "react";
 import SideNav from "../../components/SideNav/SideNav";
 import "./Budget.css"; // Importing the CSS file
 
+function Budget() {
+  const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+  const [budget, setBudget] = useState(parseFloat(currentUser.totalBalance.replace(/,/g,'')));
+  const [lineItems, setLineItems] = useState([]);
 
-const Budget = () => {
+  function addLineItem(event) {
+    event.preventDefault();
+    const form = new FormData(event.target);
+    const name = form.get("name");
+    const amount = form.get("amount");
+    const modal = document.getElementById("lineitem-modal");
+    modal.style.display = "none";
+    if (budget - amount < 0) {
+      alert("You can't spend more than your budget!");
+      return;
+    } else {
+      setLineItems([...lineItems, { name, amount }]);
+      setBudget(budget - amount);
+      return;
+    }
+  }
+
+  function deleteLineItem(index) {
+    return () => {
+      setLineItems(lineItems.filter((_, i) => i !== index));
+      const amount = lineItems[index].amount;
+      setBudget(parseInt(budget) + parseInt(amount)); 
+    };
+  }
+
   return (
     <div className="home-container">
       <div className="sidenav-container">
         <SideNav />
       </div>
 
-      <form id="form" class="budget">
-        <h1>Budget App</h1>
-        <div>Start budgeting your money with our built in app.</div>
-        <div id="budget">
-          <div class="budget-menu">
-            <div>
-              <button class="btn2">
-                <i class="bx bx-book-add"></i> Add budget
-              </button>
-            </div>
-            <div>
-              <label>Remaining Budget</label>
-              <h1 class="">500</h1>
-            </div>
+      <div id="budget">
+        <div className="budgetContainer">
+          <div className="budgetMain">
+            <h1 className="budgetHeader">Budget App</h1>
+            <p>Start budgeting your money with our built in app.</p>
+            <button
+              onClick={() => {
+                const modal = document.getElementById("lineitem-modal");
+                modal.style.display = "block";
+              }}
+            >
+              ADD BUDGET
+            </button>
           </div>
-          <div class="budget-body"></div>
+          <h1>Remaining Budget: {budget}</h1>
         </div>
-      </form>
-      <div class="overlay">
-        <div class="modal">
-            <form>
-                <h2 class="title">add budget</h2>
-                <label>description</label>
-                <textarea name="title"></textarea>
-                <label>Amount</label>
-                <input type="text" name="amount" autocomplete="off" />
-                <button type="button" class="btn2 btn-muted">Cancel</button>
-                <button type="submit" class="btn2">add Budget</button>
-            </form>
+        
+        <div id="lineitem-modal" style={{ display: "none" }}>
+          <form onSubmit={addLineItem} id="lineItemForm">
+            <input name="name" type="text" placeholder="Description" />
+            <input name="amount" type="number" placeholder="Amount" />
+            <button type="submit">Add</button>
+          </form>
         </div>
+        <ul>
+          {lineItems.map((lineItem, index) => (
+            <li key={index}>
+              {lineItem.name}: {lineItem.amount}{" "}
+              <button onClick={deleteLineItem(index)}>Delete</button>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
-};
-
+}
 
 export default Budget;
