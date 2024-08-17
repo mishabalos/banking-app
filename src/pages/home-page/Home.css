@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #121212;
     color: #fff;
 }
@@ -10,32 +10,33 @@ body {
 .homeHeader {
     font-weight: 700;
     font-style: normal;
-    color: #F3BA2F;
+    color: #f3ba2f;
     text-align: left;
     margin: 0;
     margin-bottom: 32px;
 }
 
-.bankUsers-box  {
+.bankUsers-box {
     background-color: #1e1e1e;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 32px 32px 0 32px;
-    margin-bottom:32px;
-} 
+    margin-bottom: 32px;
+}
 
 .accountName {
-    margin:0 !important;
+    margin: 0 !important;
 }
 
 .deleteAccountButton {
-    color: #F3BA2F;
+    color: #f3ba2f;
     cursor: pointer;
 }
 
-.accountName, .accountDetails {
-    color: #FFFFFF; 
-    text-align: left; 
+.accountName,
+.accountDetails {
+    color: #ffffff;
+    text-align: left;
     font-weight: 600;
     font-style: normal;
 }
@@ -73,32 +74,36 @@ body {
     height: 70px;
 }
 
-.accountTotalHeader{
+.accountTotalHeader {
     font-size: 15px;
 }
 
 .accountDisplayBalance {
     font-size: 20px;
-    color: #F3BA2F;
+    color: #f3ba2f;
     padding-left: 10px;
     font-weight: 600;
     font-style: normal;
 }
-
-
 
 /* page css */
 
 .home-container {
     display: flex;
     height: 100vh;
-  }
-  
-  .sidenav-container {
+}
+
+.sidenav-container {
     width: 252px;
-  }
-  
-  .page-content {
-    width: calc(100% - 252px); 
-    padding: 32px; 
-  }
+}
+
+.page-content {
+    width: calc(100% - 252px);
+    padding: 32px;
+}
+
+@media (max-width: 768px) {
+    .page-content {
+        width: 100% !important;
+    }
+}

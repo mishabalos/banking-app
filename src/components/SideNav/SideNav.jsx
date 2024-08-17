@@ -10,20 +10,6 @@ const SideNav = () => {
   const currentUser = JSON.parse(localStorage.getItem('currentUser'));
   // const [accountType, setAccountType] = useState(null);
 
-  let accountDefault 
-
-    if (currentUser.accountType === 'client') {
-    accountDefault = [currentUser];
-  } else {
-    accountDefault = JSON.parse(localStorage.getItem('users'));
-  }
-
-  // useEffect(() => {
-  //   // Get the account type from localStorage (or any other method)
-  //   const storedAccountType = localStorage.getItem('accountType');
-  //   setAccountType(storedAccountType);
-  // }, []);
-
 
   const handleLogout = () => {
     // Clear user session data (if stored in localStorage or cookies)
