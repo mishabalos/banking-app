@@ -80,10 +80,10 @@ const UserCreation = () => {
                 <input className="createInput" type="password" name="password" value={formData.password} onChange={handleChange} required></input>
               </div>
 
-              <div className='create-form-field'>
-              <button className="createButton">CREATE ACCOUNT</button>
-              </div>
               
+              <button className="createButton">CREATE ACCOUNT</button>
+            
+
             </form>
           </div>
         </div >

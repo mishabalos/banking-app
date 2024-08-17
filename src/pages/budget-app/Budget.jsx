@@ -38,7 +38,7 @@ function Budget() {
         <SideNav />
       </div>
 
-      <div id="budget">
+      <div className="budget-feature" id="budget">
         <div className="budgetContainer">
           <div className="budgetMain">
             <h1 className="budgetHeader">Budget App</h1>
@@ -53,23 +53,23 @@ function Budget() {
             </button>
           </div>
           <h1>Remaining Budget: {budget}</h1>
-        </div>
-        
-        <div id="lineitem-modal" style={{ display: "none" }}>
+
+          <div id="lineitem-modal" style={{ display: "none" }}>
           <form onSubmit={addLineItem} id="lineItemForm">
-            <input name="name" type="text" placeholder="Description" />
-            <input name="amount" type="number" placeholder="Amount" />
+            <input className="budget-description" name="name" type="text" placeholder="Description" />
+            <input className="budget-amount" name="amount" type="number" placeholder="Amount" />
             <button type="submit">Add</button>
           </form>
         </div>
-        <ul>
+        <ul className="budget-ul">
           {lineItems.map((lineItem, index) => (
-            <li key={index}>
+            <li className="budget-li" key={index}>
               {lineItem.name}: {lineItem.amount}{" "}
               <button onClick={deleteLineItem(index)}>Delete</button>
             </li>
           ))}
         </ul>
+        </div>
       </div>
     </div>
   );
