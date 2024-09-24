@@ -21,11 +21,15 @@ A banking app created by React JS
 Use the following credentials to test the app
 
 For Admin
+
+```public static
 email: admin123@gmail.com
-password: admin123
+password: admin123```
 
 For User
+
+```public static
 email: hidilyndiaz@gmail.com
-password: hidilyn123
+password: hidilyn123```
 
 [Live-Demo-Banking-App](https://misha-banking-app.netlify.app/) 
