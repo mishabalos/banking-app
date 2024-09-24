@@ -7,6 +7,8 @@ The user is a bank employee who manually manages the bank's accounts. He does th
 
 [Live-Demo-Banking-App](https://misha-banking-app.netlify.app/) 
 
+![Screenshot 2024-09-24 at 1 17 31 PM](https://github.com/user-attachments/assets/a9fdf740-06fd-4b83-9268-c41961b97080)
+
 ### Objective
 A banking app created by React JS
 
@@ -19,11 +21,11 @@ A banking app created by React JS
 Use the following credentials to test the app
 
 For Admin
-```email: admin123@gmail.com
-password: admin123```
+email: admin123@gmail.com
+password: admin123
 
 For User
-```email: hidilyndiaz@gmail.com
-password: hidilyn123```
+email: hidilyndiaz@gmail.com
+password: hidilyn123
 
 [Live-Demo-Banking-App](https://misha-banking-app.netlify.app/) 
