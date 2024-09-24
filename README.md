@@ -7,7 +7,7 @@ The user is a bank employee who manually manages the bank's accounts. He does th
 
 [Live-Demo-Banking-App](https://misha-banking-app.netlify.app/) 
 
-![Screenshot 2024-09-24 at 1 17 31 PM](https://github.com/user-attachments/assets/a9fdf740-06fd-4b83-9268-c41961b97080)
+<img width="1432" alt="Screenshot 2024-09-24 at 1 18 17 PM" src="https://github.com/user-attachments/assets/72b4e295-8700-4c6e-abcf-ecfa7482eb43">
 
 ### Objective
 A banking app created by React JS
