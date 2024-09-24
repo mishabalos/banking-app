@@ -22,12 +22,10 @@ Use the following credentials to test the app
 
 For Admin
 
-email: `admin123@gmail.com`
-password: `admin123`
+email: `admin123@gmail.com` password: `admin123`
 
 For User
 
-email: `hidilyndiaz@gmail.com`
-password: `hidilyn123`
+email: `hidilyndiaz@gmail.com` password: `hidilyn123`
 
 [Live-Demo-Banking-App](https://misha-banking-app.netlify.app/) 
