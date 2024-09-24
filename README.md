@@ -1,6 +1,6 @@
 # BANKING APP IN REACT JS 
 
-### A simple admin banking app designed to assist bank employees in manually managing account creation, deposits, withdrawals, and balance transfers efficiently. 
+#### A simple admin banking app designed to assist bank employees in manually managing account creation, deposits, withdrawals, and balance transfers efficiently. 
 
 ### SCENARIO
 The user is a bank employee who manually manages the bank's accounts. He does the creation of account manually using the account holders name and sets the initial balance of the account if possible. He also does the withdrawal and deposit manually for each account. He also does the transfer of balances if there are requests for it. Your task is to help this poor employee out by creating a simple admin banking app.
