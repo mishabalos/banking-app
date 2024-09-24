@@ -16,9 +16,10 @@ A banking app created by React JS
   * a page to display all users where the name and balance are visible
   * a Create Account page for creating a new user
   * a Transaction page for deposit, withdraw, and transfer
+  * a budget tracking app
 
 ### DEMO ACCOUNT CREDENTIALS
-Use the following credentials to test the app
+Use the following credentials to test the app:
 
 #### For Admin
 ```
